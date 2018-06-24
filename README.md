@@ -22,4 +22,67 @@ Donde el nombre *CanonicalGroupLimited.UbuntuonWindows* es personalizado, así q
 * [Install WSL - Microsoft](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 * [Windows Subsystem for Linux - Wikipedia](https://es.wikipedia.org/wiki/Windows_Subsystem_for_Linux)
 
+# VcXsrv
+
+VcXsrv es un Windows X-server basado en las fuentes de xorg git (como xming o xwin de cygwin) y se instalará en Windows, creando la aplicación **XLaunch**
+
+[Link del proyecto](https://sourceforge.net/projects/vcxsrv/)
+
+Es solo de descargar e instalar en Windows.
+
+# Xfce
+
+**Xfce** es un entorno de escritorio libre para sistemas tipo Unix como GNU/Linux, BSD, Solaris y derivados y se instalará desde la consola de Ubuntu WSL.
+
+1. Descargar e instalar XFCE en Ubuntu
+```bash
+sudo apt-get install xfce4-terminal
+sudo apt-get install xfce4
+```
+
+2. Especificar la pantalla del servidor
+
+1. Abrir bashrc y especificar la posición de la pantalla en 0.0
+```bash
+cd
+sudo nano .bashrc
+```
+
+Anadir al final del documento
+```bash
+export DISPLAY=:0.0
+```
+
+# Ejecutando
+
+### En Windows 
+
+1. Hay que abrir *XLaunch*, y usar las opciones
+[x] One Large Windows
+
+2. Cambiar *Display number* a 0.
+
+3. El resto de la configuración puede usar la de por defecto y finalizar.
+
+### En Ubuntu
+
+Ejecutar el siguiente comando
+```bash
+startxfce4
+```
+
+# Script
+
+En éste proyecto dejaré un script para instalar y configurar en Linux.
+
+Ejecutar Script
+```
+sudo chmod +x start.sh
+sudo ./start.sh
+``` 
+
+#### Referencia
+
+[WSL - Tutorial (Ingles)](https://github.com/QMonkey/wsl-tutorial)
+
 
