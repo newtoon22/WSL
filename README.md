@@ -81,8 +81,28 @@ sudo chmod +x start.sh
 sudo ./start.sh
 ``` 
 
+### Cambiar la clave de Root en WLS
+
+Siempre que installa WLS desconozco la contraseña, para modificarla se hace desde el shell de Windows.
+
+Abrimos cmd.exe como administrador y escribimos
+```
+wsl -u root
+passwd username
+```
+
+Pedirá el usuario que le quieres cambiar la clave y después las claves, finalmente para confimar el cambio podrás hacerlo desde la misma ventana de cmd
+
+```
+passwd username and change the password
+Type exit
+Type wsl
+Type sudo echo hi
+```
+
 #### Referencia
 
 [WSL - Tutorial (Ingles)](https://github.com/QMonkey/wsl-tutorial)
+[Root Passwd WLS - AskUbuntu.com](https://askubuntu.com/questions/931940/unable-to-change-the-root-password-in-windows-10-wsl)
 
 
