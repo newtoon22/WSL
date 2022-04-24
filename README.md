@@ -94,10 +94,9 @@ passwd username
 Pedirá el usuario que le quieres cambiar la clave y después las claves, finalmente para confimar el cambio podrás hacerlo desde la misma ventana de cmd
 
 ```
-passwd username and change the password
-Type exit
-Type wsl
-Type sudo echo hi
+exit
+wsl
+sudo echo hola
 ```
 
 #### Referencia
